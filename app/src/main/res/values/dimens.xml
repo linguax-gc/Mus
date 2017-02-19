@@ -1,0 +1,14 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="boton_pend_puntos">40dp</dimen>
+    <dimen name="boton_pend_ganador">60dp</dimen>
+    <dimen name="pendientes_nombres_margen">80dp</dimen>
+    <dimen name="vacas_margen">8dp</dimen>
+    <dimen name="margen_titulos">8dp</dimen>
+    <dimen name="margen_izq">8dp</dimen>
+    <dimen name="margen_inferior_borrar">8dp</dimen>
+    <dimen name="margen_izquierdo_radio">16dp</dimen>
+    <dimen name="anchura_tanteo">80dp</dimen>
+</resources>

@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Mus</string>
+    <string name="pendientes">Pendientes</string>
+    <string name="pend_grandes">Grandes</string>
+    <string name="pend_chicas">Chicas</string>
+    <string name="pend_pares">Pares</string>
+    <string name="pend_juego">Juego</string>
+    <string name="Vacas">Vacas</string>
+    <string name="tanteo_paso_grandes">Grandes al paso</string>
+    <string name="tanteo_paso_chicas">Chicas al paso</string>
+    <string name="tanteo_pares">Pares</string>
+    <string name="tanteo_juego">Juego</string>
+    <string name="tanteo_pares_par">P</string>
+    <string name="tanteo_pares_medias">M</string>
+    <string name="tanteo_pares_duples">D</string>
+    <string name="tanteo_juego_31">31</string>
+    <string name="tanteo_juego_juego">J</string>
+    <string name="ordago">Órd.</string>
+    <string name="mas1">+1</string>
+    <string name="mas5">+5</string>
+    <string name="menos1">-1</string>
+    <string name="Amas1">A+1</string>
+    <string name="Bmas1">B+1</string>
+    <string name="puntuacionInicial">0</string>
+    <string name="equipoA">A</string>
+    <string name="equipoB">B</string>
+    <string name="tanteo">Tanteo</string>
+    <string name="borrar">Borrar</string>
+
+</resources>

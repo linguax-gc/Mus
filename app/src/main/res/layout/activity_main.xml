@@ -1,0 +1,623 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:paddingBottom="16dp"
+    tools:context="com.example.android.mus.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:gravity="center_horizontal"
+                android:padding="@dimen/margen_titulos"
+                android:text="@string/Vacas" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mostrarVacas"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/boton_pend_puntos"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/equipoA" />
+
+                <TextView
+                    android:id="@+id/Vaca1A"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca2A"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca3A"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca4A"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca5A"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1EquipoA"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="menos1EquipoA"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/menos1" />
+
+                <Button
+                    style="@style/boton_ordago"
+                    android:layout_width="55dp"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="18dp"
+                    android:onClick="ordagoA"
+                    android:text="@string/ordago" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/equipoB" />
+
+                <TextView
+                    android:id="@+id/Vaca1B"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca2B"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca3B"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca4B"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <TextView
+                    android:id="@+id/Vaca5B"
+                    style="@style/PuntosVacas"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1EquipoB"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="menos1EquipoB"
+                    android:padding="@dimen/vacas_margen"
+                    android:text="@string/menos1" />
+
+                <Button
+                    style="@style/boton_ordago"
+                    android:layout_width="55dp"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="16dp"
+                    android:onClick="ordagoB"
+                    android:text="@string/ordago" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margen_inferior_borrar"
+                android:onClick="borrarVacas"
+                android:text="@string/borrar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="mostrarPendientes"
+                android:padding="@dimen/margen_titulos"
+                android:text="@string/pendientes" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/mostrarPendientes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <!--Layout for first round-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:text="@string/pend_grandes" />
+
+                <TextView
+                    android:id="@+id/pend_grandes"
+                    style="@style/PuntosPendientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1GrandesPendientes"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas5GrandesPendientes"
+                    android:text="@string/mas5" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="agregarGrandesPendientesA"
+                    android:text="@string/equipoA" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="agregarGrandesPendientesB"
+                    android:text="@string/equipoB" />
+
+
+            </LinearLayout>
+            <!--Layout for first round-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:text="@string/pend_chicas" />
+
+                <TextView
+                    android:id="@+id/pend_chicas"
+                    style="@style/PuntosPendientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1ChicasPendientes"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas5ChicasPendientes"
+                    android:text="@string/mas5" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="agregarChicasPendientesA"
+                    android:text="@string/equipoA" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="agregarChicasPendientesB"
+                    android:text="@string/equipoB" />
+
+
+            </LinearLayout>
+            <!--Layout for third round-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:text="@string/pend_pares" />
+
+                <TextView
+                    android:id="@+id/pend_pares"
+                    style="@style/PuntosPendientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1ParesPendientes"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas5ParesPendientes"
+                    android:text="@string/mas5" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="agregarParesPendientesA"
+                    android:text="@string/equipoA" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="agregarParesPendientesB"
+                    android:text="@string/equipoB" />
+
+            </LinearLayout>
+            <!--Layout for fourth round-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    style="@style/Vacas"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:paddingLeft="@dimen/margen_izq"
+                    android:text="@string/pend_juego" />
+
+                <TextView
+                    android:id="@+id/pend_juego"
+                    style="@style/PuntosPendientes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="16dp"
+                    android:text="@string/puntuacionInicial" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas1JuegoPendientes"
+                    android:text="@string/mas1" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="mas5JuegoPendientes"
+                    android:text="@string/mas5" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_marginLeft="20dp"
+                    android:onClick="agregarJuegoPendientesA"
+                    android:text="@string/equipoA" />
+
+                <Button
+                    android:layout_width="@dimen/boton_pend_puntos"
+                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:onClick="agregarJuegoPendientesB"
+                    android:text="@string/equipoB" />
+
+            </LinearLayout>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margen_inferior_borrar"
+                android:onClick="borrarPendientes"
+                android:text="@string/borrar" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/Titles"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:clickable="true"
+                android:gravity="center_horizontal"
+                android:onClick="mostrarTanteo"
+                android:padding="@dimen/margen_titulos"
+                android:text="@string/tanteo" />
+
+            <LinearLayout
+                android:id="@+id/mostrarTanteo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Vacas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tanteo_paso_grandes" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="mas1EquipoA"
+                        android:text="@string/Amas1" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:onClick="mas1EquipoB"
+                        android:text="@string/Bmas1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        style="@style/Vacas"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="@string/tanteo_paso_chicas" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="30dp"
+                        android:onClick="mas1EquipoA"
+                        android:text="@string/Amas1" />
+
+                    <Button
+                        android:layout_width="70dp"
+                        android:layout_height="40dp"
+                        android:onClick="mas1EquipoB"
+                        android:text="@string/Bmas1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/Vacas"
+                        android:layout_width="@dimen/anchura_tanteo"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="@string/tanteo_pares" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupPares"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/margen_izquierdo_radio">
+
+
+                        <RadioButton
+                            android:id="@+id/radioButtonParesA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipoA" />
+
+
+                        <RadioButton
+                            android:id="@+id/radioButtonParesB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipoB" />
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="@dimen/boton_pend_puntos"
+                        android:layout_height="@dimen/boton_pend_puntos"
+                        android:layout_marginLeft="16dp"
+                        android:onClick="agregarParesPar"
+                        android:text="@string/tanteo_pares_par" />
+
+                    <Button
+                        android:layout_width="@dimen/boton_pend_puntos"
+                        android:layout_height="@dimen/boton_pend_puntos"
+                        android:onClick="agregarParesMedias"
+                        android:text="@string/tanteo_pares_medias" />
+
+                    <Button
+                        android:layout_width="@dimen/boton_pend_puntos"
+                        android:layout_height="@dimen/boton_pend_puntos"
+                        android:onClick="agregarParesDuples"
+                        android:text="@string/tanteo_pares_duples" />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <TextView
+                        style="@style/Vacas"
+                        android:layout_width="@dimen/anchura_tanteo"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:text="@string/tanteo_juego" />
+
+                    <RadioGroup
+                        android:id="@+id/radioGroupJuego"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/margen_izquierdo_radio">
+
+                        <RadioButton
+                            android:id="@+id/radioButtonJuegoA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipoA" />
+
+                        <RadioButton
+                            android:id="@+id/radioButtonJuegoB"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/equipoB" />
+                    </RadioGroup>
+
+                    <Button
+                        android:layout_width="@dimen/boton_pend_puntos"
+                        android:layout_height="@dimen/boton_pend_puntos"
+                        android:layout_marginLeft="56dp"
+                        android:onClick="agregarJuego31"
+                        android:text="@string/tanteo_juego_31" />
+
+                    <Button
+                        android:layout_width="@dimen/boton_pend_puntos"
+                        android:layout_height="@dimen/boton_pend_puntos"
+                        android:onClick="agregarJuegoJuego"
+                        android:text="@string/tanteo_juego_juego" />
+
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
