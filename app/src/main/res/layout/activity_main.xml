@@ -41,76 +41,83 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/boton_pend_puntos"
+                android:layout_height="wrap_content"
                 android:orientation="horizontal">
 
                 <TextView
                     style="@style/Vacas"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight=".60"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/equipoA" />
 
                 <TextView
                     android:id="@+id/Vaca1A"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca2A"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca3A"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca4A"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca5A"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <Button
-                    android:layout_width="@dimen/boton_pend_puntos"
-                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="mas1EquipoA"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/mas1" />
 
                 <Button
-                    android:layout_width="@dimen/boton_pend_puntos"
-                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="menos1EquipoA"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/menos1" />
 
                 <Button
                     style="@style/boton_ordago"
-                    android:layout_width="55dp"
-                    android:layout_height="@dimen/boton_pend_puntos"
-                    android:layout_marginLeft="18dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.45"
                     android:onClick="ordagoA"
                     android:text="@string/ordago" />
             </LinearLayout>
@@ -124,69 +131,76 @@
                     style="@style/Vacas"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight=".60"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/equipoB" />
 
                 <TextView
                     android:id="@+id/Vaca1B"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca2B"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca3B"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca4B"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <TextView
                     android:id="@+id/Vaca5B"
                     style="@style/PuntosVacas"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
+                    android:layout_weight=".55"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/puntuacionInicial" />
 
                 <Button
-                    android:layout_width="@dimen/boton_pend_puntos"
-                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="mas1EquipoB"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/mas1" />
 
                 <Button
-                    android:layout_width="@dimen/boton_pend_puntos"
-                    android:layout_height="@dimen/boton_pend_puntos"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
                     android:onClick="menos1EquipoB"
                     android:padding="@dimen/vacas_margen"
                     android:text="@string/menos1" />
 
                 <Button
                     style="@style/boton_ordago"
-                    android:layout_width="55dp"
-                    android:layout_height="@dimen/boton_pend_puntos"
-                    android:layout_marginLeft="16dp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.45"
                     android:onClick="ordagoB"
                     android:text="@string/ordago" />
             </LinearLayout>
@@ -212,7 +226,7 @@
                 android:background="@color/colorPrimary"
                 android:clickable="true"
                 android:gravity="center_horizontal"
-                android:onClick="mostrarPendientes"
+                android:onClick="desplegarPendientes"
                 android:padding="@dimen/margen_titulos"
                 android:text="@string/pendientes" />
 
@@ -445,7 +459,7 @@
                 android:background="@color/colorPrimary"
                 android:clickable="true"
                 android:gravity="center_horizontal"
-                android:onClick="mostrarTanteo"
+                android:onClick="desplegarTanteo"
                 android:padding="@dimen/margen_titulos"
                 android:text="@string/tanteo" />
 

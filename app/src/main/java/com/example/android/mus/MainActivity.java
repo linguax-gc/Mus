@@ -1,22 +1,23 @@
 package com.example.android.mus;
 
 import android.content.Context;
-import android.content.SharedPreferences;
-import android.preference.PreferenceManager;
-import android.support.v7.app.AppCompatActivity;
+import android.net.Uri;
 import android.os.Bundle;
-import android.util.Log;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
 
-import static android.R.attr.checked;
-import static android.icu.lang.UCharacter.GraphemeClusterBreak.L;
+import com.google.android.gms.appindexing.Action;
+import com.google.android.gms.appindexing.AppIndex;
+import com.google.android.gms.appindexing.Thing;
+import com.google.android.gms.common.api.GoogleApiClient;
+
 import static com.example.android.mus.R.id.Vaca1A;
 import static com.example.android.mus.R.id.Vaca1B;
 import static com.example.android.mus.R.id.Vaca2A;
@@ -27,12 +28,6 @@ import static com.example.android.mus.R.id.Vaca4A;
 import static com.example.android.mus.R.id.Vaca4B;
 import static com.example.android.mus.R.id.Vaca5A;
 import static com.example.android.mus.R.id.Vaca5B;
-import static com.example.android.mus.R.id.pend_chicas;
-import static com.example.android.mus.R.id.pend_grandes;
-import static com.example.android.mus.R.id.pend_juego;
-import static com.example.android.mus.R.id.pend_pares;
-import static com.example.android.mus.R.id.radioButtonParesA;
-import static com.example.android.mus.R.id.radioButtonParesB;
 import static com.example.android.mus.R.id.radioGroupJuego;
 import static com.example.android.mus.R.id.radioGroupPares;
 
@@ -49,6 +44,12 @@ public class MainActivity extends AppCompatActivity {
     LinearLayout mostrarVacas;
     LinearLayout mostrarPendientes;
     LinearLayout mostrarTanteo;
+    RadioButton radioButtonJuegoA, radioButtonJuegoB;
+    RadioButton radioButtonParesA, radioButtonParesB;
+    TextView Grandes_pendientes_text_view;
+    TextView Chicas_pendientes_text_view;
+    TextView Pares_pendientes_text_view;
+    TextView Juego_pendientes_text_view;
     private RadioGroup paresRadioGroup;
     private RadioGroup juegoRadioGroup;
     private TextView vaca1A_text_view;
@@ -61,12 +62,11 @@ public class MainActivity extends AppCompatActivity {
     private TextView vaca3B_text_view;
     private TextView vaca4B_text_view;
     private TextView vaca5B_text_view;
-    RadioButton radioButtonJuegoA, radioButtonJuegoB;
-    RadioButton radioButtonParesA, radioButtonParesB;
-    TextView Grandes_pendientes_text_view;
-    TextView Chicas_pendientes_text_view;
-    TextView Pares_pendientes_text_view;
-    TextView Juego_pendientes_text_view;
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    private GoogleApiClient client;
 
     public static void slide_down(Context ctx, View v) {
         Animation a = AnimationUtils.loadAnimation(ctx, R.anim.slide_down);
@@ -109,24 +109,35 @@ public class MainActivity extends AppCompatActivity {
         Chicas_pendientes_text_view = (TextView) findViewById(R.id.pend_chicas);
         Pares_pendientes_text_view = (TextView) findViewById(R.id.pend_pares);
         Juego_pendientes_text_view = (TextView) findViewById(R.id.pend_juego);
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
 
-    public void mostrarVacas(View v) {
+    public void deplegarVacas(View v) {
         mostrarVacas.setVisibility(mostrarVacas.isShown()
                 ? View.GONE
                 : View.VISIBLE);
     }
 
-    public void mostrarPendientes(View v) {
-        mostrarPendientes.setVisibility(mostrarPendientes.isShown()
-                ? View.GONE
-                : View.VISIBLE);
+    public void desplegarPendientes(View v) {
+        if (mostrarPendientes.isShown()) {
+            Fx.slide_up(this, mostrarPendientes);
+            mostrarPendientes.setVisibility(View.GONE);
+        } else {
+            mostrarPendientes.setVisibility(View.VISIBLE);
+            Fx.slide_down(this, mostrarPendientes);
+        }
     }
 
-    public void mostrarTanteo(View v) {
-        mostrarTanteo.setVisibility(mostrarTanteo.isShown()
-                ? View.GONE
-                : View.VISIBLE);
+    public void desplegarTanteo(View v) {
+        if (mostrarTanteo.isShown()) {
+            Fx.slide_up(this, mostrarTanteo);
+            mostrarTanteo.setVisibility(View.GONE);
+        } else {
+            mostrarTanteo.setVisibility(View.VISIBLE);
+            Fx.slide_down(this, mostrarTanteo);
+        }
     }
 
     public void mostrarEquipoA(int puntos) {
@@ -485,4 +496,39 @@ public class MainActivity extends AppCompatActivity {
         mostrarJuegoPendientes(juegoPendientes);
     }
 
+    /**
+     * ATTENTION: This was auto-generated to implement the App Indexing API.
+     * See https://g.co/AppIndexing/AndroidStudio for more information.
+     */
+    public Action getIndexApiAction() {
+        Thing object = new Thing.Builder()
+                .setName("Main Page") // TODO: Define a title for the content shown.
+                // TODO: Make sure this auto-generated URL is correct.
+                .setUrl(Uri.parse("http://[ENTER-YOUR-URL-HERE]"))
+                .build();
+        return new Action.Builder(Action.TYPE_VIEW)
+                .setObject(object)
+                .setActionStatus(Action.STATUS_TYPE_COMPLETED)
+                .build();
+    }
+
+    @Override
+    public void onStart() {
+        super.onStart();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        client.connect();
+        AppIndex.AppIndexApi.start(client, getIndexApiAction());
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+
+        // ATTENTION: This was auto-generated to implement the App Indexing API.
+        // See https://g.co/AppIndexing/AndroidStudio for more information.
+        AppIndex.AppIndexApi.end(client, getIndexApiAction());
+        client.disconnect();
+    }
 }

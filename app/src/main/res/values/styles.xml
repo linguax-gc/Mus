@@ -6,7 +6,6 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-
     </style>
 <style name="Titles">
     <item name="android:textColor">@color/fondo_titulos</item>
@@ -36,8 +35,8 @@
         <item name="android:textSize">16sp</item>
     </style>
     <style name="boton_ordago">
-        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textColor">@color/ordago</item>
         <item name="android:textStyle">bold</item>
-        <item name="android:background">@android:color/background_dark</item>
+        <item name="android:colorButtonNormal">@android:color/black</item>
     </style>
 </resources>
